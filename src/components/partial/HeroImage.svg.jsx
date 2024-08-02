@@ -6,7 +6,7 @@ const HeroImage = () => {
       viewBox="0 0 602 401"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="transform"
+      className="transform lg:scale-75"
     >
       <path
         d="M299.5 42L0 221.5L301 400.5L601.5 221.5L299.5 42Z"

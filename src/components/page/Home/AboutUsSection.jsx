@@ -5,8 +5,8 @@ import AboutUsCurve from "../../partial/AboutUs.curve";
 
 const AboutUsSection = () => {
   return (
-    <section className="about-us relative my-8 flex items-center justify-between gap-8 text-left">
-      <div className="about-info m-auto flex max-w-[47%] flex-col justify-start gap-4">
+    <section className="about-us relative my-8 flex flex-col items-center justify-center gap-8 text-left lg:flex-row lg:justify-between lg:overflow-x-visible">
+      <div className="about-info flex flex-col justify-start pl-12 md:px-8 lg:max-w-[47%] lg:gap-4 lg:px-0 [&>*]:w-fit">
         <span className="font-semibold leading-[125%] text-accent">
           About Us
         </span>
@@ -33,7 +33,7 @@ const AboutUsSection = () => {
           </div>
         </div>
       </div>
-      <div className="about-image overflow-hidden pl-12">
+      <div className="about-image overflow-hidden lg:pl-12">
         <img className="object-fill" src={aboutImage} alt="aboutImg" />
       </div>
       <AboutUsCurve />

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Card = ({ children, className }) => {
   return (
     <div
-      className={`card flex flex-col items-center justify-center gap-8 rounded-2xl px-8 py-16 ${className}`}
+      className={`card flex flex-col items-center justify-center gap-4 rounded-2xl px-4 py-8 lg:gap-8 lg:px-8 lg:py-16 ${className}`}
     >
       {children}
     </div>

@@ -56,7 +56,9 @@ const ProfessionalTeams = () => {
                 {item.title}
               </h5>
             </div>
-            <p className="tracking-widest text-secondary">{item.desc}</p>
+            <p className="tracking-normal text-secondary md:tracking-widest">
+              {item.desc}
+            </p>
             <div className="social-btns flex justify-between gap-4">
               <Button className="bg-white px-4 shadow-2xl">
                 <FaTwitter className="text-2xl text-primary" />

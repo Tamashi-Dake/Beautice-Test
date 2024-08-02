@@ -2,7 +2,7 @@ const ContactUsCurve = () => {
   return (
     <>
       <svg
-        className="absolute -left-36 bottom-44 z-[-1]"
+        className="absolute -left-36 bottom-[17rem] z-[-1]"
         width="1025"
         height="825"
         viewBox="0 0 1025 825"
@@ -29,7 +29,7 @@ const ContactUsCurve = () => {
       </svg>
 
       <svg
-        className="absolute -left-40 bottom-24 z-[-2]"
+        className="absolute -left-40 bottom-48 z-[-2]"
         width="1176"
         height="929"
         viewBox="0 0 1176 929"

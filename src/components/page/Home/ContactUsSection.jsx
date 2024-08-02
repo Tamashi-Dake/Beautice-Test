@@ -5,11 +5,11 @@ import ContactUsCurve from "../../partial/ContactUs.curve";
 
 const ContactUsSection = () => {
   return (
-    <section className="contact-us relative flex items-center justify-between gap-8 text-left">
-      <div className="contact-image w-[60%]">
+    <section className="contact-us relative flex flex-col items-center justify-between gap-8 text-left lg:flex-row lg:overflow-x-visible">
+      <div className="contact-image lg:w-[60%]">
         <ContactUs />
       </div>
-      <div className="contact-info m-auto flex flex-col justify-start gap-4">
+      <div className="contact-info m-auto flex flex-col justify-start gap-4 px-8 lg:px-0">
         <span className="font-semibold leading-[125%] text-accent">
           Contact Us
         </span>
@@ -20,7 +20,7 @@ const ContactUsSection = () => {
           Lorem ipsum dolor sit amet nulla turapis tellus.
         </p>
         <form className="contact-form my-8 flex flex-col gap-12">
-          <div className="name flex justify-between">
+          <div className="name flex justify-between gap-4">
             <Input
               elementType="input"
               inputType="text"
@@ -57,7 +57,7 @@ const ContactUsSection = () => {
             inputID="inquiry"
             classname=""
           />
-          <Button type="submit" className="w-fit">
+          <Button type="submit" className="lg:w-fit">
             Send Message
           </Button>
         </form>

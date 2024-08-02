@@ -5,18 +5,20 @@ import HeroImage from "../../partial/HeroImage.svg";
 const HeroSection = () => {
   return (
     <>
-      <section className="relative m-auto flex h-[80vh] items-center gap-8 p-16 pt-4">
-        <div className="hero-info flex max-w-[45%] flex-col items-start gap-4 text-primary">
-          <h1 className="hero-title text-left text-[48px] font-semibold leading-[125%]">
+      <section className="relative m-auto flex min-h-[80vh] flex-col-reverse items-center justify-center pt-4 lg:flex-row lg:gap-8 lg:p-16">
+        <div className="hero-info flex min-w-[50%] flex-col items-start gap-4 text-primary lg:max-w-[45%]">
+          <h1 className="hero-title m-auto max-w-[65%] text-left text-[48px] font-semibold leading-[125%] lg:m-0 lg:max-w-none">
             Clinic & beauty consultant
           </h1>
-          <p className="hero-text mb-4 pr-4 text-left font-medium tracking-wider">
+          <p className="hero-text m-auto mb-4 max-w-[65%] text-left font-medium tracking-widest lg:m-0 lg:max-w-[90%]">
             It is a long established fact that a reader will be by the readable
             content of a page.
           </p>
-          <Button>More Details</Button>
+          <Button className="m-auto w-[45%] py-6 lg:m-0 lg:w-auto">
+            More Details
+          </Button>
         </div>
-        <div className="hero-image max-w-[60%]">
+        <div className="hero-image w-fit lg:max-w-[60%] lg:scale-100">
           <HeroImage />
         </div>
       </section>
