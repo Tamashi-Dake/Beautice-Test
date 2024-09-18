@@ -1,6 +1,6 @@
 import Button from "../../common/Button";
 import Input from "../../common/Input";
-import ContactUs from "../../partial/ContactUs";
+import ContactUs from "../../partial/ContactUs.svg";
 import ContactUsCurve from "../../partial/ContactUs.curve";
 
 const ContactUsSection = () => {

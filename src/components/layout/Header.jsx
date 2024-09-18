@@ -13,7 +13,7 @@ const Header = () => {
   // only show hambergurMenu when user scroll up, use ref to compare the previous scrollY
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY < hamburgerRef.current) {
+      if (window.scrollY < hamburgerRef.current + 10) {
         setIsHamburgerVisible(true);
       } else {
         setIsHamburgerVisible(false);
@@ -25,6 +25,14 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -45,7 +53,7 @@ const Header = () => {
         </span>
       </div>
       <div
-        className={`menu-wraper fixed right-0 top-0 z-10 flex h-screen flex-col items-center justify-between bg-white pt-40 transition-all lg:relative lg:h-auto lg:flex-row lg:gap-12 lg:bg-transparent lg:p-0 xl:gap-20 ${isOpen ? "w-full p-20 md:w-auto md:translate-x-0" : "w-0 overflow-hidden p-0 md:translate-x-full lg:w-auto lg:translate-x-0 lg:overflow-visible"}`}
+        className={`menu-wraper fixed right-0 top-0 z-10 flex h-[-webkit-fill-available] flex-col items-center bg-white pt-40 transition-all lg:relative lg:h-auto lg:flex-row lg:justify-between lg:gap-12 lg:bg-transparent lg:p-0 xl:gap-20 ${isOpen ? "w-full p-20 md:w-auto md:translate-x-0" : "w-0 overflow-hidden p-0 md:translate-x-full lg:w-auto lg:translate-x-0 lg:overflow-visible"}`}
       >
         <nav className="main-menu text-2xl lg:text-base">
           <ul className="flex flex-col items-start gap-8 lg:flex-row lg:items-center xl:gap-12">
