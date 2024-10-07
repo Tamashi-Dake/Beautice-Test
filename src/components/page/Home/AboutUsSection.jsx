@@ -5,7 +5,7 @@ import AboutUsCurve from "../../partial/AboutUs.curve";
 
 const AboutUsSection = () => {
   return (
-    <section className="about-us relative my-8 flex flex-col items-center justify-center gap-8 text-left lg:flex-row lg:justify-between lg:overflow-x-visible">
+    <section className="about-us relative my-8 flex flex-col items-center justify-center gap-8 overflow-x-visible text-left lg:flex-row lg:justify-between">
       <div className="about-info flex flex-col justify-start pl-12 md:px-8 lg:max-w-[47%] lg:gap-4 lg:px-0 [&>*]:w-fit">
         <span className="font-semibold leading-[125%] text-accent">
           About Us

@@ -38,9 +38,12 @@ const ServicesSection = () => {
           turpis.
         </p>
       </div>
-      <div className="services-choice flex items-center justify-center gap-2 px-2 lg:gap-8">
+      <div className="services-choice flex flex-wrap items-center justify-center gap-2 px-2 md:flex-nowrap lg:gap-8">
         {services.map((service, index) => (
-          <Card key={index} className="bg-white shadow-xl shadow-[#E4E7FF]">
+          <Card
+            key={index}
+            className="max-w-60 bg-white shadow-xl shadow-[#E4E7FF] md:max-w-full"
+          >
             <service.icon />
             <h5 className="text-lg font-semibold leading-[125%] text-primary">
               {service.title}

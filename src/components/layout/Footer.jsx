@@ -11,7 +11,7 @@ import FooterCurve from "../partial/Footer.curve";
 
 const Footer = () => {
   return (
-    <footer className="relative px-12 pb-4 pt-24 tracking-widest text-[#D7DBFF] lg:overflow-x-visible">
+    <footer className="relative overflow-x-visible px-12 pb-4 pt-24 tracking-widest text-[#D7DBFF]">
       <div className="m-4 flex flex-col justify-between gap-2 md:m-12 md:gap-8 lg:flex-row">
         <div className="company flex flex-col gap-8">
           <div className="logo flex items-center gap-4">

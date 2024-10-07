@@ -40,7 +40,7 @@ const Header = () => {
 
   console.log(isOpen);
   return (
-    <header className="relative flex items-center justify-between px-16 pt-12 lg:overflow-x-visible">
+    <header className="relative flex items-center justify-between overflow-x-visible px-16 pt-12">
       <div className="main-logo flex items-center justify-between gap-4">
         <Logo />
         <span
@@ -78,16 +78,16 @@ const Header = () => {
       </div>
       {/* hambergurMenu */}
       <div
-        className={`hambergurMenu fixed right-12 top-12 z-10 transition-all lg:hidden ${isHamburgerVisible ? "" : "-translate-y-40"}`}
+        className={`hambergurMenu fixed right-4 top-4 z-10 transition-all sm:right-8 sm:top-8 lg:hidden ${isHamburgerVisible ? "" : "-translate-y-40"}`}
       >
         <Button
-          className="translate-y-0 px-6 py-6 shadow-none"
+          className="translate-y-0 px-4 py-4 shadow-none"
           onClick={handleMenu}
         >
           {isOpen ? (
-            <IoCloseOutline size={30} />
+            <IoCloseOutline className="text-2xl md:text-3xl" />
           ) : (
-            <RxHamburgerMenu size={30} />
+            <RxHamburgerMenu className="text-2xl md:text-3xl" />
           )}
         </Button>
       </div>

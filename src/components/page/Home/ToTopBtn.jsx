@@ -30,7 +30,7 @@ const ToTopBtn = () => {
   return (
     <Button
       onClick={handleScrollToTop}
-      className={`bottom-32 right-12 z-[1] block rounded-lg px-2 py-2 hover:shadow-none ${isVisible ? "fixed" : "hidden"}`}
+      className={`bottom-10 right-4 z-[1] block rounded-full px-4 py-4 hover:shadow-none md:bottom-10 md:right-8 ${isVisible ? "fixed" : "hidden"}`}
     >
       <FaArrowUp className="text-lg" />
     </Button>

@@ -1,8 +1,8 @@
 const FooterCurve = () => {
   return (
-    <>
+    <d>
       <svg
-        className="absolute -bottom-9 -left-[5rem] z-[-1] lg:-left-24 lg:scale-90 lg:scale-x-110"
+        className="absolute -bottom-9 -left-[5rem] z-[-1] lg:-left-24 lg:scale-90 lg:scale-x-110 xl:scale-x-[1.2]"
         width="1440"
         height="705"
         viewBox="0 0 1440 705"
@@ -18,7 +18,7 @@ const FooterCurve = () => {
       </svg>
 
       <svg
-        className="absolute -bottom-8 -left-[5rem] z-[-2] lg:-left-24 lg:scale-90 lg:scale-x-110"
+        className="absolute -bottom-8 -left-[5rem] z-[-2] lg:-left-24 lg:scale-90 lg:scale-x-110 xl:scale-x-[1.2]"
         width="1436"
         height="706"
         viewBox="0 0 1436 706"
@@ -34,7 +34,7 @@ const FooterCurve = () => {
       </svg>
 
       <svg
-        className="absolute -bottom-8 -left-[5rem] z-[-3] lg:-bottom-2 lg:-left-24 lg:scale-90 lg:scale-x-110"
+        className="absolute -bottom-8 -left-[5rem] z-[-3] lg:-bottom-2 lg:-left-24 lg:scale-90 lg:scale-x-110 xl:scale-x-[1.2]"
         width="1440"
         height="125"
         viewBox="0 0 1440 125"
@@ -48,7 +48,7 @@ const FooterCurve = () => {
           fill="#0D165C"
         />
       </svg>
-    </>
+    </d>
   );
 };
 
