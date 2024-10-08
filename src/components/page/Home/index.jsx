@@ -7,7 +7,7 @@ import ToTopBtn from "./ToTopBtn";
 
 const Home = () => {
   return (
-    <main className="mb-32 flex flex-col gap-32 overflow-x-visible md:m-8">
+    <main className="mx-auto mb-32 flex max-w-[1280px] flex-col gap-32 overflow-x-visible md:my-8">
       <HeroSection />
       <ServicesSection />
       <AboutUsSection />

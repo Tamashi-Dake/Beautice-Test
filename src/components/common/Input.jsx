@@ -14,7 +14,7 @@ const Input = ({ elementType, inputType, placeholder, inputID, classname }) => {
           type={inputType}
           id={inputID}
           placeholder={placeholder}
-          className={`rounded-lg border border-[#D9DDFE] px-8 py-4 placeholder:tracking-widest focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-60 ${classname}`}
+          className={`rounded-lg border border-[#D9DDFE] p-4 placeholder:tracking-widest focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-60 sm:px-8 sm:py-4 ${classname}`}
         />
       ) : (
         <textarea

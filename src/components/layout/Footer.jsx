@@ -11,21 +11,21 @@ import FooterCurve from "../partial/Footer.curve";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-x-visible px-12 pb-4 pt-24 tracking-widest text-[#D7DBFF]">
+    <footer className="relative mx-auto max-w-[1280px] overflow-x-visible px-12 pb-4 pt-24 tracking-widest text-[#D7DBFF]">
       <div className="m-4 flex flex-col justify-between gap-2 md:m-12 md:gap-8 lg:flex-row">
         <div className="company flex flex-col gap-8">
           <div className="logo flex items-center gap-4">
             <LogoFooter />
             <span className="text-2xl font-bold text-white">Beautice</span>
           </div>
-          <div className="flex flex-col items-start justify-center gap-4 pl-4">
+          <div className="flex flex-col items-start justify-center gap-4 pl-4 !text-left">
             <p className="company-desc">
               <span className="font-bold">Beautice</span> is a Beauty Clinic
               WordPress Theme.
             </p>
             <div className="company-info flex flex-col items-start text-sm italic">
               <p className="address"> Baker Steet 101, NY, United States. </p>
-              <div className="contact flex justify-between gap-12">
+              <div className="contact flex flex-wrap justify-between gap-2 sm:gap-12">
                 <p className="phone"> +521 569 8966.</p>
                 <p className="email">mail@company.com.</p>
               </div>

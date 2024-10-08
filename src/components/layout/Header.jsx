@@ -40,7 +40,7 @@ const Header = () => {
 
   console.log(isOpen);
   return (
-    <header className="relative flex items-center justify-between overflow-x-visible px-16 pt-12">
+    <header className="relative mx-auto flex max-w-[1280px] items-center justify-between overflow-x-visible px-8 pt-12 sm:px-16">
       <div className="main-logo flex items-center justify-between gap-4">
         <Logo />
         <span
@@ -74,7 +74,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <Button className="">Contact</Button>
+        <Button className="mt-8">Contact</Button>
       </div>
       {/* hambergurMenu */}
       <div

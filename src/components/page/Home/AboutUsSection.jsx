@@ -5,8 +5,8 @@ import AboutUsCurve from "../../partial/AboutUs.curve";
 
 const AboutUsSection = () => {
   return (
-    <section className="about-us relative my-8 flex flex-col items-center justify-center gap-8 overflow-x-visible text-left lg:flex-row lg:justify-between">
-      <div className="about-info flex flex-col justify-start pl-12 md:px-8 lg:max-w-[47%] lg:gap-4 lg:px-0 [&>*]:w-fit">
+    <section className="about-us relative m-8 flex flex-col items-center justify-center overflow-x-visible text-left lg:flex-row lg:justify-between">
+      <div className="about-info flex flex-col justify-start md:px-8 md:pl-12 lg:max-w-[47%] lg:gap-4 lg:px-0 [&>*]:w-fit">
         <span className="font-semibold leading-[125%] text-accent">
           About Us
         </span>
@@ -23,7 +23,7 @@ const AboutUsSection = () => {
           Id dui erat sed quam tellus in purus. Pellentesque congue fringilla
           cras tellus enim.
         </p>
-        <div className="about-btns my-8 flex gap-12">
+        <div className="about-btns my-8 flex flex-row flex-wrap justify-center gap-8 sm:justify-normal sm:gap-12">
           <Button>Learn More</Button>
           <div className="watchVideo flex items-center gap-2">
             <Button className="bg-primary px-4">
@@ -33,7 +33,7 @@ const AboutUsSection = () => {
           </div>
         </div>
       </div>
-      <div className="about-image overflow-hidden lg:pl-12">
+      <div className="about-image overflow-hidden">
         <img className="object-fill" src={aboutImage} alt="aboutImg" />
       </div>
       <AboutUsCurve />

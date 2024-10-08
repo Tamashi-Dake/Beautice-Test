@@ -41,11 +41,11 @@ const ProfessionalTeams = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
         </p>
       </div>
-      <div className="services-choice flex items-center justify-center gap-4">
+      <div className="services-choice flex flex-wrap items-center justify-center gap-4">
         {proData.map((item, index) => (
           <Card
             key={index}
-            className={`px-12 ${index === 1 ? `shadow-xl shadow-[#E4E7FF]` : `shadow-none`}`}
+            className={`max-w-60 px-12 md:max-w-[22rem] ${index === 1 ? `shadow-xl shadow-[#E4E7FF]` : `shadow-none`}`}
           >
             <img src={item.img} alt={item + index} />
             <div className="flex flex-col gap-4">
