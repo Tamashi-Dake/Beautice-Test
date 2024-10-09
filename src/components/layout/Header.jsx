@@ -8,23 +8,23 @@ import { IoCloseOutline } from "react-icons/io5";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHamburgerVisible, setIsHamburgerVisible] = useState(true);
-  const hamburgerRef = useRef(null);
+  // const hamburgerRef = useRef(null);
 
   // only show hambergurMenu when user scroll up, use ref to compare the previous scrollY
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < hamburgerRef.current + 10) {
-        setIsHamburgerVisible(true);
-      } else {
-        setIsHamburgerVisible(false);
-      }
-      hamburgerRef.current = window.scrollY;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY < hamburgerRef.current - 10) {
+  //       setIsHamburgerVisible(true);
+  //     } else {
+  //       setIsHamburgerVisible(false);
+  //     }
+  //     hamburgerRef.current = window.scrollY;
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -74,14 +74,14 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <Button className="mt-8">Contact</Button>
+        <Button className={` ${isOpen ? "mt-8" : ""} `}>Contact</Button>
       </div>
       {/* hambergurMenu */}
       <div
         className={`hambergurMenu fixed right-4 top-4 z-10 transition-all sm:right-8 sm:top-8 lg:hidden ${isHamburgerVisible ? "" : "-translate-y-40"}`}
       >
         <Button
-          className="translate-y-0 px-4 py-4 shadow-none"
+          className="px-4 py-4 shadow-none transition-none hover:translate-y-0"
           onClick={handleMenu}
         >
           {isOpen ? (
